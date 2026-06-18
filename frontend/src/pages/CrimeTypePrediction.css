@@ -1,0 +1,33 @@
+.crime-prediction-page {
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.crime-prediction-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/crime_prediction.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.crime-prediction-page .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Enhance card visibility on background */
+.crime-prediction-page .card {
+    background: rgba(20, 20, 20, 0.92);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}

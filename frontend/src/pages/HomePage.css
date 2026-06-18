@@ -1,0 +1,40 @@
+.home-page {
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/crime-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+    filter: grayscale(30%);
+}
+
+.home-page .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Enhance card visibility on background */
+.home-page .card {
+    background: rgba(20, 20, 20, 0.92);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.home-page .stat-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
